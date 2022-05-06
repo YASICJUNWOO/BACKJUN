@@ -8,25 +8,25 @@ int main() {
 	string dan;
 	getline(cin, dan);
 
-	//¿¹¿Ü
+	//ì˜ˆì™¸
 	if (dan[0] == ' ' || dan[dan.length()-1] == ' ') {
 
-		//°ø¹é¸¸ ÀÖÀ» ‹š
+		//ê³µë°±ë§Œ ìˆì„ ë•Œ
 		if (dan.length() == 1) {
 			cnt = -1;
 		}
 
-		//Ã³À½ÀÌ °ø¹éÀÏ ‹š
+		//ì²˜ìŒì´ ê³µë°±ì¼ ë•Œ
 		else if (dan[0] == ' ' && dan.length()!= 1) {
 
-			// ³¡µµ °ø¹éÀÏ ‹š
+			// ëë„ ê³µë°±ì¼ ë–„
 			if (dan[dan.length()-1] == ' ') {
 				for (int i = 1;i < dan.length() - 1;i++) {
 					if (dan[i] == ' ') { cnt++; }
 				}
 			}
 
-			//Ã³À½¸¸ °ø¹éÀÏ ¶§
+			//ì²˜ìŒë§Œ ê³µë°±ì¼ ë•Œ
 			else {
 				for (int i = 1;i < dan.length();i++) {
 					if (dan[i] == ' ') { cnt++; }
@@ -35,14 +35,14 @@ int main() {
 
 		}
 
-		//³¡¸¸ °ø¹éÀÏ ‹š
+		//ëë§Œ ê³µë°±ì¼ ë•Œ
 		else {
 			for (int i = 0;i < dan.length() - 2;i++) {
 				if (dan[i] == ' ') { cnt++; }
 			}
 		}
 	}
-	//ÀÏ¹İ °æ¿ì
+	//ì¼ë°˜ ê²½ìš°
 	else {
 		for (int i = 0;i < dan.length();i++) {
 			if (dan[i] == ' ') { cnt++; }
