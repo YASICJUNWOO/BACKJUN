@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-7662(이중 우선순위 큐)",
+      "appliesTo": "C++/7662(이중 우선순위 큐).cpp",
+      "type": "launch"
+    }
+  ]
+}
