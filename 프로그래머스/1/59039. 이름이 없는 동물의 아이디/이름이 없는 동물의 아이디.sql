@@ -1,0 +1,7 @@
+-- 코드를 입력하세요
+SELECT ANIMAL_ID
+FROM ANIMAL_INS 
+-- 이름 없음
+WHERE NAME IS NULL
+--ID 정렬
+ORDER BY ANIMAL_ID;
